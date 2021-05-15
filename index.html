@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
     <section id="recipe-section">
-      <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
-      <input
-        aria-label="food-input"
-        id="food-input"
-        onchange="handleFoodChange()"
-      />
-      <button id="recipe-button" onclick="handleRecipeClick()">
-        Give me a recipe!
-      </button>
-      <a id="recipe-label"></a>
+        <h1 id="section-heading">Recipe finder</h1>
+            <form>
+                <!-- <input
+                id="food-input"
+                type="text"
+                placeholder="type ingredient to get recipe"
+                />  -->
+                <input
+                aria-label="food-input"
+                id="food-input"
+                placeholder="type ingredient"
+                onchange="handleFoodChange()"
+                />
+            </form>
+        <button  id="recipe-button" onclick="handleRecipeClick()">
+            Get recipe!
+        </button> 
+        <article id="search-result">
+            <!-- <div class="recipe-data">
+                <img class="recipe-img" src="pancake_PNG99.png" alt="" />
+                <div class="item-result">
+                    <h2 class="title">Recipe Label</h2>
+                    <a class="recipe-label" href="a">View Recipe</a>
+                </div>
+                <p class="recipe-data">Calories : 120</p>
+            </div> -->
+        </article>    
     </section>
-
-    <section class="image-position">
-      <figcaption id="caption1"></figcaption>
-      <figure> 
-      <img id="image-id1" src="" alt="recipe-image1">
-      </figure>
-      
-    </section>
-
-    <section class="image-position">
-      <img id="image-id2" src="" alt="recipe-image2">
-    </section>
-
-    <section class="image-position">
-      <img id="image-id3" src="" alt="recipe-image3">
-    </section>
-    <script src="./main.js"></script>
-  </body>
+</main>
+<script src="main.js"></script>
+</body>
 </html>
