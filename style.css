@@ -38,7 +38,7 @@ main {
 #section-heading {
   text-align: center;
   font-size: 4rem;
-  color: #feb236;
+  color: #f9b4ab;
   margin-bottom: 30px;
 }
 form {
@@ -61,7 +61,7 @@ form input {
 }
 #recipe-button {
   border-radius: 10%;
-  background-color: #feb236;
+  background-color: #f9b4ab;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -81,7 +81,7 @@ form input {
 .recipe-data {
   width: 100%;
   border-radius: 8px;
-  background-color: rgb(187, 185, 185);
+  background-color: #fdebd3;
   padding: 15px;
   overflow: hidden;
 }
